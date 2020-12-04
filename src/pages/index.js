@@ -9,10 +9,12 @@ import { graphql } from "gatsby"
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-    <BackgroundImage
+    <BackgroundImage className="masthead"
     fluid={props.data.indexImage.childImageSharp.fluid}
     >
-      Text should go here
+      <div className="black-overlay">
+        Text should go here
+      </div>
     </BackgroundImage>
   </Layout>
 )
