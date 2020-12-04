@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import BigFooter from "./footer"
 import "../css/layout.css"
+import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,16 +19,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <Container className="layout-container" fluid>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0`,
-          padding: `0`,
-        }}
-      >
+      <Container
+      style={{
+        margin: `0 auto`,
+        padding: `0`,
+      }} fluid>
         <main>{children}</main>
-        <BigFooter />
-      </div>
+      </Container>
+      <BigFooter />
+    </Container>
     </>
   )
 }

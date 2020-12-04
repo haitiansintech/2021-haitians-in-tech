@@ -590,6 +590,20 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+.layout-container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
