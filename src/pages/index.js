@@ -13,7 +13,9 @@ const IndexPage = (props) => (
     fluid={props.data.indexImage.childImageSharp.fluid}
     >
       <div className="black-overlay">
-        Text should go here
+        <div className="content-box">
+          <h1>Text should go here</h1>
+        </div>
       </div>
     </BackgroundImage>
   </Layout>
