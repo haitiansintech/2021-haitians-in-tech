@@ -2,10 +2,12 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Navbar, Nav} from "react-bootstrap";
 import Logo from "./logo"
+import "../css/navbar.css"
+
 
 const Header = ({ siteTitle }) => (
-  <Navbar bg="primary" variant="dark">
-    <Navbar.Brand href="#home"><Logo /></Navbar.Brand>
+  <Navbar className="justify-content-between" bg="primary" variant="dark">
+    <Logo />
     <Nav className="auto">
       <Nav.Link href="#home">Home</Nav.Link>
       <Nav.Link href="#features">About</Nav.Link>

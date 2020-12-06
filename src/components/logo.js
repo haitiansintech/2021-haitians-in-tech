@@ -1,13 +1,14 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import "../css/navbar.css"
 
 const Logo = () => {
   const data = useStaticQuery(graphql`
   query MyLogo {
-    placeholderImage: file(relativePath: {eq: "haitiansintech-outline.png"}) {
+    file(relativePath: {eq: "hit-logo.png"}) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -15,11 +16,11 @@ const Logo = () => {
   }
   `)
 
-  if (!data?.placeholderImage?.childImageSharp?.fluid) {
+  if (!data?.file?.childImageSharp?.fluid) {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
 }
 
 export default Logo
