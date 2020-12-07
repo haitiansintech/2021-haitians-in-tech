@@ -1,3 +1,7 @@
 .nav-logo {
     display: inline-flex !important;
 }
+.header {
+    box-shadow: 0.33333rem 0 1.33333rem rgba(87,87,87,.1) !important;
+    background: #fff;
+}

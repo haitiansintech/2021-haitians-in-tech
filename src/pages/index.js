@@ -5,10 +5,12 @@ import SEO from "../components/seo"
 import "../css/index.css"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
+import Hero from "../components/hero"
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
+    <Hero className="hero" />
     <BackgroundImage className="masthead"
     fluid={props.data.indexImage.childImageSharp.fluid}
     >

@@ -20,7 +20,7 @@ const Logo = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img className="navbar brand no-padding" alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
+  return <Img className="navbar brand" alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
 }
 
 export default Logo
