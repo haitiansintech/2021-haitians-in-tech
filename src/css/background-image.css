@@ -8,13 +8,16 @@
 .black-overlay {
     display: -webkit-flex; /*Safari*/
     display: flex;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(248, 242, 242, 0.7);
     height: 100%;
     align-items: center;
-    color: white;
+    color: black;
 }
 .content-box {
-    max-width: 700px;
+    width: auto;
     margin: 0 auto;
     text-align:center;
+}
+.bg-btn {
+    margin: 20px;
 }

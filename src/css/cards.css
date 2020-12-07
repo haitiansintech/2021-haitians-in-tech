@@ -1,0 +1,17 @@
+.service-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0.33333rem 0 1.33333rem rgba(87,87,87,.1);
+    margin: 1rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.fa-users,
+.fa-laptop-code, 
+.fa-hands-helping {
+    font-size: 7rem;
+}
