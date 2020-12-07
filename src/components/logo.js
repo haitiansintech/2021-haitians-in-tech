@@ -8,7 +8,7 @@ const Logo = () => {
   query MyLogo {
     file(relativePath: {eq: "hit-logo.png"}) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -20,7 +20,7 @@ const Logo = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
+  return <Img className="navbar brand no-padding" alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
 }
 
 export default Logo
