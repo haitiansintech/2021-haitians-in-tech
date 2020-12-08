@@ -17,15 +17,15 @@ const IndexPage = (props) => (
       <div className="black-overlay">
         <div className="content-box">
           <h1>Haitians in Tech</h1>
-          <h2>Hired and Connected</h2>
+          <h3>Hired and Connected</h3>
           <Button className="bg-btn" href="#">Join our newsletter</Button>
         <Button className="bg-btn" href="#">Hire us for Recruitment</Button>
         </div>
       </div>
     </BackgroundImage>
     <Container className="who-we-are" fluid>
-      <h1>Who We Are</h1>
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      <h1 className="p-3">Who We Are</h1>
+      <p className="pb-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
       <ServiceCards />
     </Container>
     <Container className="form-section" fluid>
