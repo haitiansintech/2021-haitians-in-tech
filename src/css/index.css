@@ -5,12 +5,15 @@
     text-align: center;
     background-color: #F8F9FA;
     position: relative;
-    padding: 3rem 0 4rem 0;   
 }
 
 .form-section {
     background-color: white;
     position: relative;
-    text-align: center;
     padding: 2.5rem;
+}
+.form-content{
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
 }

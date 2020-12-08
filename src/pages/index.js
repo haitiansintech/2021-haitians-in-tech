@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../css/index.css"
+import "../css/form.css"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 import { Button, Container, Form } from "react-bootstrap"
@@ -23,18 +24,19 @@ const IndexPage = (props) => (
         </div>
       </div>
     </BackgroundImage>
-    <Container className="who-we-are" fluid>
+    <Container className="who-we-are pt-5" fluid>
       <h1 className="p-3">Who We Are</h1>
       <p className="pb-3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
       <ServiceCards />
     </Container>
     <Container className="form-section" fluid>
-      <h1>Subscribe to our newsletter</h1>
-      <p>Get the latest job openings, upcoming events, valuable resources and opportunities in your inbox bi-weekly!</p>
-      <Container>
+      <div className="form-content">
+        <h1 className="form-title">Subscribe to our newsletter</h1>
+        <p className="form-text">Get the latest job openings, upcoming events, valuable resources and opportunities in your inbox bi-weekly!</p>
+      </div>
+      <Container className="form">
         <Form>
           <Form.Group controlId="formGroupEmail">
-            <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" />
             <Button variant="primary" type="submit">
               Submit

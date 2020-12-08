@@ -6,9 +6,9 @@ import { faLaptopCode, faHandsHelping, faUsers } from "@fortawesome/free-solid-s
 
 const ServiceCards = () => (
     <div className="service-cards">
-        <Row>
-            <Col className="col-md-12 col-lg-4">
-                <Card style={{ width: '18rem' }}>
+        <Row className="m-5">
+            <Col className="mb-5" xs={12} lg={4}>
+                <Card>
                 <FontAwesomeIcon icon={faUsers} />
                     <Card.Body>
                         <Card.Title>Networking</Card.Title>
@@ -19,8 +19,8 @@ const ServiceCards = () => (
                     </Card.Body>
                 </Card>            
             </Col>
-            <Col className="col-md-12 col-lg-4">
-                <Card style={{ width: '18rem' }}>
+            <Col className="mb-5" xs={12} lg={4}>
+                <Card>
                 <FontAwesomeIcon icon={faLaptopCode} />
                     <Card.Body>
                     <Card.Title>Resources</Card.Title>
@@ -31,8 +31,8 @@ const ServiceCards = () => (
                     </Card.Body>
                 </Card>            
             </Col>
-            <Col className="col-md-12 col-lg-4">
-                <Card style={{ width: '18rem' }}>
+            <Col className="mb-5" xs={12} lg={4}>
+                <Card>
                 <FontAwesomeIcon icon={faHandsHelping} />
                     <Card.Body>
                         <Card.Title>Career Development</Card.Title>

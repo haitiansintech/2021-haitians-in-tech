@@ -1,0 +1,13 @@
+.form-group {
+    display: -webkit-inline-box;
+}
+.form {
+    text-align: center;
+    padding-top: 3rem;
+}
+.form-control {
+    margin-right: 2rem;
+}
+.form-title {
+    padding-bottom: 1rem;
+}
