@@ -3,25 +3,61 @@ import { Container, Row, Col } from "react-bootstrap";
 import "../css/footer.css"
 
 const Footer = () => (
-    <Container className="footer" fluid>
-        <Row>
-            <Col>Column 1</Col>
-            <Col>Column 2</Col>
-            <Col>Column 3</Col>
-        </Row>
-        <Row>
-            <Col>Column 4</Col>
-            <Col>Column 5</Col>
-            <Col>Column 6</Col>
-        </Row>
-        <Row className="text-center p-5">
-            <Col>
+    <div className="footer">
+        <Container fluid>
+            <Row>
+                <Col>
+                    <h5 className="title">Footer Content</h5>
+                    <p>
+                    Here you can use rows and columns here to organize your footer
+                    content.
+                    </p>
+                </Col>
+                <Col>
+                    <h5 className="title">Links</h5>
+                    <ul className="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </Col>
+                <Col>
+                    <h5 className="title">Links</h5>
+                    <ul className="list-unstyled">
+                    <li>
+                    <a href="#!">Link 1</a>
+                    </li>
+                    <li>
+                    <a href="#!">Link 2</a>
+                    </li>
+                    <li>
+                    <a href="#!">Link 3</a>
+                    </li>
+                    <li>
+                    <a href="#!">Link 4</a>
+                    </li>
+                    </ul>
+                </Col>
+            </Row>
+            <div>
+                <Container className="text-center pt-3" fluid>
                 © {new Date().getFullYear()}, Built with
                 {` `}
                 <a href="https://www.gatsbyjs.com">Gatsby</a>            
-            </Col>
-        </Row>
-    </Container>
+                </Container>
+            </div>
+        </Container>  
+    </div>
+
 )
 
 export default Footer

@@ -5,5 +5,11 @@
     text-align: center;
     background-color: #F8F9FA;
     position: relative;
-    height: 100vh;
+    padding: 2.5rem;
+}
+.form-section {
+    background-color: white;
+    position: relative;
+    text-align: center;
+    padding: 2.5rem;
 }

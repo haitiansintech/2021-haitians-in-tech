@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import "../css/index.css"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
-import { Button, Container } from "react-bootstrap"
+import { Button, Container, Form } from "react-bootstrap"
 import ServiceCards from "../components/cards.js"
 
 const IndexPage = (props) => (
@@ -27,6 +27,21 @@ const IndexPage = (props) => (
       <h1>Who We Are</h1>
       <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
       <ServiceCards />
+    </Container>
+    <Container className="form-section" fluid>
+      <h1>Subscribe to our newsletter</h1>
+      <p>Get the latest job openings, upcoming events, valuable resources and opportunities in your inbox bi-weekly!</p>
+      <Container>
+        <Form>
+          <Form.Group controlId="formGroupEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form.Group>
+        </Form>        
+      </Container>
     </Container>
   </Layout>
 )
