@@ -28,7 +28,7 @@ export const teamQuery = graphql`
   }
 `;
 
-const Team = ({ data }) => {
+const AboutPage = ({ data }) => {
   const team = data.allTeamJson
   return (
     <Layout>
@@ -52,4 +52,4 @@ const Team = ({ data }) => {
   )
 }
 
-export default Team;
+export default AboutPage;
