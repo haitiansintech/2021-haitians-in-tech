@@ -43,8 +43,8 @@ const AboutPage = ({ data }) => {
             />
             <p>{person.name}</p>
             <p>{person.title}</p>
-            <a href={`${team.linkedin}`}><p>Linkedin</p></a>
-            <a href={`${team.portfolio}`}><p>Portfolio</p></a>               
+            <a href={`${person.linkedin}`}><p>Linkedin</p></a>
+            <a href={`${person.portfolio}`}><p>Portfolio</p></a>               
           </div>
         ))}
       </Container>
