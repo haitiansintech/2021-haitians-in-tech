@@ -15,3 +15,10 @@
 .form-content{
     text-align: center;
 }
+
+.page-heading {
+    text-align: center;    
+}
+.about-grid {
+    display:inline-block !important;
+}

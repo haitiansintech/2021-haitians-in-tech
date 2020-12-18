@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap"
 import "../css/cards.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode, faHandsHelping, faUsers } from "@fortawesome/free-solid-svg-icons"

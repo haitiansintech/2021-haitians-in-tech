@@ -11,6 +11,14 @@
     padding: 2rem;
 }
 
+.card.person-card {
+    display: block;
+    flex-direction: none;
+}
+.card-container {
+    display: inline-flex;
+}
+
 .fa-users,
 .fa-laptop-code, 
 .fa-hands-helping {
