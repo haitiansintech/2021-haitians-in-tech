@@ -7,6 +7,7 @@ const TeamCards = ({imageData, name, title, linkedin, portfolio}) => (
       <Img 
       fluid={imageData} 
       alt={name}
+      objectFit="contain"
       />
       <div>
         <p>{name}</p>

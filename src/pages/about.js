@@ -17,7 +17,7 @@ export const teamQuery = graphql`
         portfolio
         image {
           childImageSharp {
-            fluid(maxWidth: 500, quality: 100) {
+            fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
               srcSet
             }
           }
