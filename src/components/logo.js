@@ -11,6 +11,9 @@ const Logo = () => {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
+        fixed(width: 200) {
+          ...GatsbyImageSharpFixed
+        }
       }
     }
   }
@@ -20,7 +23,7 @@ const Logo = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img className="navbar brand" alt="logo" loading="eager" fluid={data.file.childImageSharp.fluid} />
+  return <Img className="navbar brand" alt="logo" loading="eager" fixed={data.file.childImageSharp.fixed} />
 }
 
 export default Logo
