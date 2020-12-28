@@ -19,7 +19,7 @@ const Logo = () => {
   }
   `)
 
-  if (!data?.file?.childImageSharp?.fluid) {
+  if (!data?.file?.childImageSharp?.fixed) {
     return <div>Picture not found</div>
   }
 
