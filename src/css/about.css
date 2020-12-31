@@ -1,0 +1,4 @@
+.team-container {
+    display: inline-flex;
+    justify-content: space-around;
+}

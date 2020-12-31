@@ -3,9 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../css/index.css"
-import { Col, Container, Row } from "react-bootstrap"
+import "../css/about.css"
+import { Container, Row, Col } from "react-bootstrap"
 import { graphql } from "gatsby"
-import TeamCards from "../components/team"
+import TeamCards from "../components/team.js"
+import BgImage from "../components/bgimage.js"
 
 export const teamQuery = graphql`
   query MyTeam {
@@ -17,7 +19,7 @@ export const teamQuery = graphql`
         portfolio
         image {
           childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 500, quality: 100) {
+            fluid(maxWidth: 200, maxHeight: 200, quality: 100, cropFocus: CENTER, fit: COVER ) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -32,8 +34,9 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="About" />
-      <Container>
-        <h1 className="page-heading">About</h1>
+      <BgImage />
+      <h1 className="page-heading p-5">About</h1>
+      <Container className="pb-5 team-container" fluid>
         <Row>
           {team.nodes.map(({ title, name, image, linkedin, portfolio }) => {
             const imageData = image.childImageSharp.fluid
