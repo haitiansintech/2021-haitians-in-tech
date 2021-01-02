@@ -3,12 +3,12 @@
 }
 .who-we-are {
     text-align: center;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     position: relative;
 }
 
 .form-section {
-    background-color: white;
+    background-color: #fff;
     position: relative;
     padding: 2.5rem;
 }
@@ -21,4 +21,7 @@
 }
 .about-grid {
     display:inline-block !important;
+}
+.all-caps {
+    
 }

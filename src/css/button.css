@@ -1,0 +1,27 @@
+.bg-btn {
+    border-radius: 20px;
+    color: #fff;
+    border-color: #d40d2c;
+}
+.bg-btn:hover {
+    color: #000000;
+    border-color: #d40d2c;
+    background-color:#d40d2c;
+}
+.bg-btn.red {
+    color: #d40d2c;
+    border-color: #d40d2c;
+}
+
+.bg-btn.red:hover {
+    color: #fff;
+    border-color: #d40d2c;
+    background-color:#d40d2c;
+}
+.form-button {
+    margin: 0 0 0 1rem;
+    background-color:#d40d2c;
+}
+.bg-btn.hero {
+    background-color:#d40d2c;
+}

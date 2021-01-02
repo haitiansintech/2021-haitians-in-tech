@@ -2,7 +2,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     margin-top: auto;
     padding: 3rem;
 }
@@ -12,7 +12,7 @@ ul {
     padding: 0;
 }
 .social-icons {
-    color: pink;
+    color: #D40D2C;
     font-size: 3rem;
     padding-right: 15px;
 }

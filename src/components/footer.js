@@ -4,6 +4,7 @@ import "../css/footer.css"
 import Logo from "./logo"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubSquare, faTwitterSquare, faInstagramSquare, faTwitch } from "@fortawesome/free-brands-svg-icons"
+import { Link } from "gatsby"
 
 const Footer = () => (
     <div className="footer">
@@ -26,10 +27,10 @@ const Footer = () => (
                         Copyright Haitians in Tech© 2020
                         </li>
                         <li>
-                            <a className="footer-links" href="#!">Haitians in Tech Code of Conduct</a>
+                            <Link to="/codeofconduct" className="footer-links" >Haitians in Tech Code of Conduct</Link>
                         </li>
                         <li>
-                            <a className="footer-links" href="#!">Privacy Policy & Terms of service</a>
+                            <Link to="/privacypolicy" className="footer-links">Privacy Policy & Terms of service</Link>
                         </li>
                     </ul>
                 </Col>
@@ -37,22 +38,22 @@ const Footer = () => (
                     <h5 className="title">Connect with us</h5>
                     <div className="social-media">
                         <div>
-                            <a href="https://github.com/haitiansintech">
+                            <a rel="noreferrer" target="_blank" href="https://github.com/haitiansintech">
                                 <FontAwesomeIcon className="social-icons" icon={faGithubSquare} />
                             </a>
                         </div>
                         <div>
-                            <a href="https://twitter.com/haitiansintech">
+                            <a rel="noreferrer" target="_blank" href="https://twitter.com/haitiansintech">
                                 <FontAwesomeIcon className="social-icons" icon={faTwitterSquare} />
                             </a>
                         </div>
                         <div>
-                            <a href="https://instagram.com/haitiansintech">
+                            <a rel="noreferrer" target="_blank" href="https://instagram.com/haitiansintech">
                                 <FontAwesomeIcon className="social-icons" icon={faInstagramSquare} />
                             </a>
                         </div>
                         <div>
-                            <a href="https://twitch.com/haitiansintech">
+                            <a rel="noreferrer" target="_blank" href="https://twitch.com/haitiansintech">
                                 <FontAwesomeIcon className="social-icons" icon={faTwitch} />
                             </a>
                         </div>
@@ -63,7 +64,7 @@ const Footer = () => (
                 <Container className="text-center pt-3" fluid>
                 © {new Date().getFullYear()}, Built by
                 {` `}
-                <a href="https://www.thestartuplife.us">The Startup Life</a>            
+                <a rel="noreferrer" target="_blank" href="https://www.thestartuplife.us">The Startup Life</a>            
                 </Container>
             </div>
         </Container>  

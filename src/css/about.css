@@ -3,5 +3,8 @@
     justify-content: space-around;
 }
 .about-section {
-    background: #F8F9FA;
+    background: #f8f9fa;
+}
+.about-us {
+    font-size: 25px;
 }

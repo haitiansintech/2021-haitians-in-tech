@@ -5,40 +5,40 @@ import SEO from "../components/seo"
 import "../css/index.css"
 import "../css/membership.css"
 import Cards from "../components/membershipCards"
-import { Container, Button, Row, Col } from "react-bootstrap"
-import BgImage from "../components/bgimage.js"
+import { Container, Button, Row, Col, Image } from "react-bootstrap"
+import svgIcon from "../images/coding-art.png"
 
 
 const MembershipPage = (props) => (
   <Layout>
     <SEO title="Membership" />
     <Container className="text-center p-5 membership-section" fluid>
-      <h1>Apply to be a Member</h1>
-      <p>If you're interested in joining the paid community, please fill out an application.</p>
-      <Button className="bg-btn" href="#">Apply Now</Button>
+      <h1>Apply to become a Founding Member</h1>
+      <p className="pt-3">If you're interested in joining the paid community, fill out an application.</p>
+      <Button variant="outline-primary" className="bg-btn red" href="https://forms.gle/BjieJthgGoo5So9XA">Apply Now</Button>
     </Container>
-    <Container>
-      <h1 className="text-center pt-5">Membership Dues</h1>
+    <Container className="text-center pt-5">
+      <h1 className="pb-3">Membership Dues</h1>
+      <p>We provide two simple payment options for Founding Membership,<br></br>so you can choose what’s best for you.</p>
       <Cards />      
     </Container>
     <Container className="membership-section" fluid>
     <Container>
       <Row>
         <Col>
-          <h5>What do Members get?</h5>
-          <BgImage/>
+          <h5 className="text-center member-heading">What do Members get?</h5>
+          <Image src={svgIcon} />
         </Col>
         <Col className="membership-bullet">
           <div>
             <ul>
-            <li><i>👑</i> Networking in our private online community.</li>
-            <li><i>📺</i> All access pass to weekly webinars.</li>
-            <li><i>🏆️</i> Weekly goal setting and monthly challenges to keep you motivated all year long.</li>
-            <li><i>🎁</i> Curated perks including discounted conferences, coding classes, and more.</li>
+            <li><span aria-label="emoji" role="img">👑</span> Networking in our private online community.</li>
+            <li><span aria-label="emoji" role="img">📺</span> All access pass to weekly webinars.</li>
+            <li><span aria-label="emoji" role="img">🏆️</span> Weekly goal setting and monthly challenges to keep you motivated all year long.</li>
+            <li><span aria-label="emoji" role="img">🎁</span> Curated perks including discounted conferences, coding classes, and more.</li>
             <br></br>
             <br></br>
-            <br></br>
-            <li><h5>...All for less than the price of one conference.</h5></li>
+            <h5 className="pb-1">...All for less than the price of one conference.</h5>
             </ul>
           </div>
         </Col>
@@ -48,7 +48,7 @@ const MembershipPage = (props) => (
     <Container className="text-center p-5" fluid>
       <h1>WANT TO BECOME A FOUNDING MEMBER?</h1>
       <p>Become a member of Haitians in Tech and get notified as soon as Founding Membership opens up.</p>
-      <Button className="bg-btn" href="#">Join Haitians in Tech</Button>
+      <Button variant="outline-primary" className="bg-btn red" href="https://forms.gle/BjieJthgGoo5So9XA">Join Haitians in Tech</Button>
     </Container>
   </Layout>
 )

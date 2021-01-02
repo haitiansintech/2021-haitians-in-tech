@@ -6,8 +6,8 @@ const BgImage = () => (
     <div className="hero-container">
       <div className="black-overlay">
         <div className="content-box">
-          <h1>Text</h1>
-          <p>Something here</p>
+          <h1>"Success is not an accident,<br></br>success is a choice."</h1>
+          <p>— Stephen Curry</p>
         </div>
       </div>
     </div>  

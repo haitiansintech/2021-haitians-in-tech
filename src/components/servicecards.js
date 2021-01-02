@@ -9,7 +9,7 @@ const ServiceCards = () => (
         <Row className="m-5">
             <Col className="mb-5" xs={12} lg={4}>
                 <Card>
-                <FontAwesomeIcon icon={faUsers} />
+                <FontAwesomeIcon className="font-awesome-icon" icon={faUsers} />
                     <Card.Body>
                         <Card.Title>Networking</Card.Title>
                         <Card.Text>
@@ -21,7 +21,7 @@ const ServiceCards = () => (
             </Col>
             <Col className="mb-5" xs={12} lg={4}>
                 <Card>
-                <FontAwesomeIcon icon={faLaptopCode} />
+                <FontAwesomeIcon className="font-awesome-icon" icon={faLaptopCode} />
                     <Card.Body>
                     <Card.Title>Resources</Card.Title>
                         <Card.Text>
@@ -33,7 +33,7 @@ const ServiceCards = () => (
             </Col>
             <Col className="mb-5" xs={12} lg={4}>
                 <Card>
-                <FontAwesomeIcon icon={faHandsHelping} />
+                <FontAwesomeIcon className="font-awesome-icon" icon={faHandsHelping} />
                     <Card.Body>
                         <Card.Title>Career Development</Card.Title>
                             <Card.Text>
