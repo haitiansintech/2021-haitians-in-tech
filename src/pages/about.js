@@ -35,14 +35,17 @@ const AboutPage = ({ data }) => {
     <Layout>
       <SEO title="About" />
       <BgImage />
-      <h1 className="page-heading p-5">About</h1>
+      <Container className="text-center p-5 about-section" fluid>
+        <p className="pl-5 pr-5">We're just passionate technologists who've come together to provide <br></br>resources, mentorship, and opportunities to people of Haitian descent as they pursue careers in technology.</p>
+      </Container>
+        <h1 className="page-heading p-5">Team</h1>
       <Container className="pb-5 team-container" fluid>
         <Row>
           {team.nodes.map(({ title, name, image, linkedin, portfolio }) => {
             const imageData = image.childImageSharp.fluid
 
             return (
-              <Col md={6} xs={12}>
+              <Col md={4} xs={12}>
                 <TeamCards
                   title={title}
                   name={name}

@@ -1,0 +1,9 @@
+.membership-section {
+    background: #F8F9FA;
+    padding: 3rem 0 3rem 0;
+}
+.membership-bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}

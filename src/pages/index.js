@@ -21,8 +21,8 @@ const IndexPage = (props) => (
           <h3>Hired and Connected</h3>
           <Container>
             <Button className="bg-btn" href="#">Join our newsletter</Button>
-            <Button className="bg-btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdF1otO2-pHB9E-ankhr9QcWSwAIE9JzAwKGqVo1Cb5ZqTlNA/viewform">Post A Job</Button>
+            {/* <Button className="bg-btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdF1otO2-pHB9E-ankhr9QcWSwAIE9JzAwKGqVo1Cb5ZqTlNA/viewform">Post A Job</Button> */}
           </Container>
         </div>
       </div>
