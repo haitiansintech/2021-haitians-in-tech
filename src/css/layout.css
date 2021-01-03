@@ -616,3 +616,6 @@ main {
 .red {
   color: #D40D2C;
 }
+.all-caps {
+  text-transform: uppercase;
+}

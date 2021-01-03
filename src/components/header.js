@@ -8,7 +8,7 @@ import { Link } from "gatsby"
 
 const Header = () => (
   <Navbar className="header justify-content-between" bg="light" variant="light"expand="md">
-    <Navbar.Brand className="nav-logo text-logo" href="/"><Logo /><span className="pl-2 hit-text">Haitians In Tech</span></Navbar.Brand>
+    <Navbar.Brand className="nav-logo text-logo" href="/"><Logo /><span className="pl-2 hit-text all-caps">Haitians In Tech</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">

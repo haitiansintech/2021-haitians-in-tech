@@ -22,7 +22,6 @@
 .about-grid {
     display:inline-block !important;
 }
-.new-line {
-    display: flex;
-    flex-wrap: wrap;
+.hero-heading {
+    padding: 1rem;
 }

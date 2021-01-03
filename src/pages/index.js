@@ -18,8 +18,7 @@ const IndexPage = (props) => (
     >
       <div className="black-overlay">
         <div className="content-box">
-          <h1>Haitians in Tech</h1>
-          <p><b>L'union fait la force</b></p>
+          <h1 className="all-caps hero-heading">L'union fait la force</h1>
           <Container>
             <Button className="bg-btn hero" href="#newsletter">Join our newsletter</Button>
           </Container>
