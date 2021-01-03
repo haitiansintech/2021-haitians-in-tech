@@ -39,22 +39,22 @@ const Footer = () => (
                     <div className="social-media">
                         <div>
                             <a rel="noreferrer" target="_blank" href="https://github.com/haitiansintech">
-                                <FontAwesomeIcon className="social-icons glyphicon" icon={faGithubSquare} />
+                                <FontAwesomeIcon className="social-icons" icon={faGithubSquare} />
                             </a>
                         </div>
                         <div>
                             <a rel="noreferrer" target="_blank" href="https://twitter.com/haitiansintech">
-                                <FontAwesomeIcon className="social-icons glyphicon" icon={faTwitterSquare} />
+                                <FontAwesomeIcon className="social-icons" icon={faTwitterSquare} />
                             </a>
                         </div>
                         <div>
                             <a rel="noreferrer" target="_blank" href="https://instagram.com/haitiansintech">
-                                <FontAwesomeIcon className="social-icons glyphicon" icon={faInstagramSquare} />
+                                <FontAwesomeIcon className="social-icons" icon={faInstagramSquare} />
                             </a>
                         </div>
                         <div>
                             <a rel="noreferrer" target="_blank" href="https://twitch.com/haitiansintech">
-                                <FontAwesomeIcon className="social-icons glyphicon" icon={faTwitch} />
+                                <FontAwesomeIcon className="social-icons" icon={faTwitch} />
                             </a>
                         </div>
                     </div>
