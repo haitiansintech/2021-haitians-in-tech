@@ -21,7 +21,7 @@ const Footer = () => (
                         Press/Partnerships: <a className="footer-links" href="mailto:team@haitiansintech.com">team@haitiansintech.com</a>
                         </li>
                         <li>
-                        Share a conference discount with this <a className="footer-links" href="#!">form.</a>
+                        Share a conference discount with this <a className="footer-links" rel="noreferrer" target="_blank" href="https://forms.gle/ad7gxuwdiAv9gQeU9">form.</a>
                         </li>
                         <li>
                         Copyright Haitians in Tech© 2020
