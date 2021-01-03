@@ -22,6 +22,7 @@
 .about-grid {
     display:inline-block !important;
 }
-.all-caps {
-    
+.new-line {
+    display: flex;
+    flex-wrap: wrap;
 }

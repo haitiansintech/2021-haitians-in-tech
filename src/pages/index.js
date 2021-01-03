@@ -33,17 +33,17 @@ const IndexPage = (props) => (
     </Container>
     <Container className="form-section" fluid>
       <div className="form-content">
-        <h1 className="form-title">Subscribe to our newsletter</h1>
+        <h1 className="form-title">Subscribe to our <span className="red">newsletter</span></h1>
         <p className="form-text pt-2">Get the latest job openings, upcoming events, valuable resources<br></br>and opportunities in your inbox bi-weekly!</p>
       </div>
       <Container className="form">
         <Form id="newsletter">
           <Form.Group controlId="formGroupEmail">
-            <Form.Control type="email" placeholder="Enter email" />
-            <Button className="bg-btn form-button" type="submit">
-              Submit
-            </Button>
+              <Form.Control type="email" placeholder="Enter email" />             
           </Form.Group>
+          <Button className="bg-btn form-button" type="submit">
+                Submit
+          </Button> 
         </Form>        
       </Container>
     </Container>
