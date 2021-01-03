@@ -13,8 +13,7 @@ const ServiceCards = () => (
                     <Card.Body>
                         <Card.Title>Networking</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Connect with Haitians from all over the world who are working in tech.
                         </Card.Text>
                     </Card.Body>
                 </Card>            
@@ -25,8 +24,7 @@ const ServiceCards = () => (
                     <Card.Body>
                     <Card.Title>Resources</Card.Title>
                         <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
+                        Access learning resources to develop in your career.
                         </Card.Text>
                     </Card.Body>
                 </Card>            
@@ -37,8 +35,7 @@ const ServiceCards = () => (
                     <Card.Body>
                         <Card.Title>Career Development</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            Every successful person started with a goal. Access mentors to help you plan the right career moves.
                             </Card.Text>
                     </Card.Body>
                 </Card>            
