@@ -23,7 +23,7 @@ ul {
     color: #000000;
     text-decoration: underline;
 }
-@media screen and (max-width: 299px) {
+/* @media screen and (max-width: 299px) {
     .glyphicon {
         font-size: 1.2em;
     }
@@ -39,4 +39,4 @@ ul {
     .glyphicon {
         font-size: 4em;
     }
-}
+} */
