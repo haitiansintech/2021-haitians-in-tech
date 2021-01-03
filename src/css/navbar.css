@@ -24,3 +24,9 @@
     color: #0012A1;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 510px) {
+    .hit-text {
+      display: none;
+    }
+  }
