@@ -10,7 +10,7 @@ const membershipCards = () => (
                     <Card.Body>
                         <Card.Text className="text-center">
                             <p className="price">$50/MO</p>
-                            <p>billed quarterly</p>
+                            <p className="PriceTag-tag">billed quarterly</p>
                         </Card.Text>
                     </Card.Body>
                 </Card>            
@@ -20,7 +20,7 @@ const membershipCards = () => (
                     <Card.Body>
                         <Card.Text className="text-center">
                             <p className="price price--red">$30/MO</p>
-                            <p>billed yearly</p>
+                            <p className="PriceTag-tag">billed yearly</p>
                             <div className="PriceTag-ribbon">
                                 <i className="PriceTag-ribbonTriangle"></i>
                                 <i className="PriceTag-ribbonWrap"></i>

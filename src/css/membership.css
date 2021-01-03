@@ -79,3 +79,7 @@
 .form-flex {
     display: flex;
 }
+.PriceTag-tag {
+    font-size: 22px;
+    margin-top: 10px;
+}
