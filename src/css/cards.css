@@ -22,7 +22,7 @@
 .fa-users,
 .fa-laptop-code, 
 .fa-hands-helping {
-    font-size: 70px;
+    font-size: 3rem !important;
 }
 .team-cards {
     display: inherit;
