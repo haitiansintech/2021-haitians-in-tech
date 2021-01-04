@@ -43,9 +43,9 @@ const IndexPage = (props) => (
           data-netlify="true" 
           id="newsletter">
             <input type="hidden" name="form-name" value="newsletter" />
-          <p class="hidden" netlify>
-            <label>Don’t fill this out if you're human: <input name="bot-field" name="email" value="email"/></label>
-          </p>
+            <p class="hidden" netlify>
+              <label>Don’t fill this out if you're human: <input name="bot-field" name="email" value="email"/></label>
+            </p>
           <Form.Group controlId="formGroupEmail">
               <Form.Control type="email" placeholder="Enter email" />             
           </Form.Group>
