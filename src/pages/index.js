@@ -37,6 +37,7 @@ const IndexPage = (props) => (
       </div>
       <Container className="form">
         <Form 
+          name="newsletter-subscriber"
           netlify-honeypot="bot-field" 
           method="POST" 
           data-netlify="true" 
