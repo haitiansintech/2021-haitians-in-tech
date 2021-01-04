@@ -47,7 +47,7 @@ const IndexPage = (props) => (
               <label>Don’t fill this out if you're human: <input name="bot-field" name="email" value="email"/></label>
             </p>
           <Form.Group controlId="formGroupEmail">
-              <Form.Control type="email" placeholder="Enter email" />             
+              <Form.Control type="email" placeholder="Enter email" name="email" />             
           </Form.Group>
           <Button value="register" className="bg-btn form-button" type="submit">
                 Submit
