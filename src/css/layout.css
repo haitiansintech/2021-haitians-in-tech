@@ -619,3 +619,6 @@ main {
 .all-caps {
   text-transform: uppercase;
 }
+.hidden {
+  display: none;
+}
