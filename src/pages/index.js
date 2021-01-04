@@ -42,6 +42,7 @@ const IndexPage = (props) => (
           method="POST" 
           data-netlify="true" 
           id="newsletter">
+            <input type="hidden" name="form-name" value="newsletter" />
           <p class="hidden" netlify>
             <label>Don’t fill this out if you're human: <input name="bot-field" name="newsletter" value=""/></label>
           </p>
