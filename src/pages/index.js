@@ -37,18 +37,18 @@ const IndexPage = (props) => (
       </div>
       <Container className="form">
         <Form 
-          name="newsletter-subscriber"
+          name="newsletter"
           netlify-honeypot="bot-field" 
           method="POST" 
           data-netlify="true" 
           id="newsletter">
           <p class="hidden" netlify>
-            <label>Don’t fill this out if you're human: <input name="bot-field" name="newsletter-subscriber" value=""/></label>
+            <label>Don’t fill this out if you're human: <input name="bot-field" name="newsletter" value=""/></label>
           </p>
           <Form.Group controlId="formGroupEmail">
               <Form.Control type="email" placeholder="Enter email" />             
           </Form.Group>
-          <Button className="bg-btn form-button" type="submit">
+          <Button value="register" className="bg-btn form-button" type="submit">
                 Submit
           </Button> 
         </Form>        
