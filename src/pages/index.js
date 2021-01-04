@@ -36,7 +36,14 @@ const IndexPage = (props) => (
         <p className="form-text pt-2">Get the latest job openings, upcoming events, valuable resources<br></br>and opportunities in your inbox bi-weekly!</p>
       </div>
       <Container className="form">
-        <Form id="newsletter">
+        <Form 
+          netlify-honeypot="bot-field" 
+          method="POST" 
+          data-netlify="true" 
+          id="newsletter">
+          <p class="hidden" netlify>
+            <label>Don’t fill this out if you're human: <input name="bot-field" name="newsletter-subscriber" value=""/></label>
+          </p>
           <Form.Group controlId="formGroupEmail">
               <Form.Control type="email" placeholder="Enter email" />             
           </Form.Group>
