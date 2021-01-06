@@ -14,5 +14,13 @@
     "linkedin": "https://www.linkedin.com/in/darlyze-calixte-0501a8117/",
     "portfolio": "https://darveloper.tech/",
     "image":"./images/darveloper.jpg"
-    }
+    },
+    {
+        "slug":"nita-saint",
+        "name":"Nita Saint-Hilaire",
+        "title": "Data Scientist",
+        "linkedin": "https://www.linkedin.com/in/nitasaint",
+        "portfolio": "http://www.thedatabea.com/",
+        "image":"./images/nita-saint.jpg"
+        }
 ]

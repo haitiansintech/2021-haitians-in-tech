@@ -3,12 +3,12 @@
 }
 .who-we-are {
     text-align: center;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     position: relative;
 }
 
 .form-section {
-    background-color: white;
+    background-color: #fff;
     position: relative;
     padding: 2.5rem;
 }
@@ -21,4 +21,8 @@
 }
 .about-grid {
     display:inline-block !important;
+}
+.hero-heading {
+    padding: 1rem;
+    text-shadow: 8px 5px 3px rgba(0,0,0,.06);
 }

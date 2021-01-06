@@ -2,7 +2,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #F8F9FA;
+    background-color: #f8f9fa;
     margin-top: auto;
     padding: 3rem;
 }
@@ -10,4 +10,16 @@ ul {
     list-style-type: none;
     margin: 0 !important;
     padding: 0;
+}
+.social-icons {
+    color: #D40D2C;
+    font-size: 3rem !important;
+    padding-right: 15px;
+}
+.social-media {
+    display: flex;
+}
+.footer-links {
+    color: #000000;
+    text-decoration: underline;
 }

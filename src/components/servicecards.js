@@ -9,35 +9,26 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
+import AnimatedCard from "./animatedCard"
+// import Card from "./Card"
 
-const ServiceCard = ({ icon, title, description }) => {
-  const controls = useAnimation()
-  const [ref, inView] = useInView()
-  useEffect(() => {
-    if (inView) {
-      console.log("inView", inView)
-      controls.start("visible")
-    }
-  }, [inView])
+const ServiceCard = ({ icon, title, description, animationDelay }) => {
+  // const controls = useAnimation()
+  // const [ref, inView] = useInView()
+  // useEffect(() => {
+  //   if (inView) {
+  //     controls.start("visible")
+  //   }
+  // }, [inView])
 
   return (
-    <Card
-      ref={ref}
-      as={motion.div}
-      initial="hidden"
-      variants={{
-        hidden: { opacity: 0, translateY: 50 },
-        visible: { opacity: 1, translateY: 0 },
-      }}
-      animate={controls}
-      transition={{ duration: 0.5, delay: 0.1 }}
-    >
-      <FontAwesomeIcon icon={icon} />
+    <AnimatedCard delay={animationDelay}>
+      <FontAwesomeIcon color="#d40d2c" icon={icon} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
       </Card.Body>
-    </Card>
+    </AnimatedCard>
   )
 }
 
@@ -49,21 +40,23 @@ const ServiceCards = () => {
           <ServiceCard
             icon={faUsers}
             title="Networking"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            description="Connect with Haitians from all over the world who are working in tech."
           />
         </Col>
         <Col className="mb-5" xs={12} lg={4}>
           <ServiceCard
             icon={faLaptopCode}
             title="Resources"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            description="Access learning resources to develop in your career."
+            animationDelay={0.2}
           />
         </Col>
         <Col className="mb-5" xs={12} lg={4}>
           <ServiceCard
             icon={faHandsHelping}
             title="Career Development"
-            description="Some quick example text to build on the card title and make up the bulk of the card's content."
+            description="Every successful person started with a goal. Access mentors to help you plan the right career moves."
+            animationDelay={0.3}
           />
         </Col>
       </Row>

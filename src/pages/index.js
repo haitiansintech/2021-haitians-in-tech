@@ -7,7 +7,8 @@ import "../css/form.css"
 import BackgroundImage from "gatsby-background-image"
 import { graphql } from "gatsby"
 import { Button, Container, Form } from "react-bootstrap"
-import ServiceCards from "../components/cards.js"
+import ServiceCards from "../components/servicecards.js"
+import "../css/button.css"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 
@@ -33,24 +34,10 @@ const IndexPage = props => {
               initial={{ translateY: -100, opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Haitians in Tech
+              L'union fait la force
             </motion.h1>
-
-            <h3>
-              {"Hired and Connected".split("").map((char, index) => (
-                <motion.div
-                  key={index}
-                  style={{ display: "inline-block" }}
-                  initial={{ opacity: 0, translateY: 100 }}
-                  animate={{ opacity: 1, translateY: 0 }}
-                  transition={{ delay: index / 19 }}
-                >
-                  {char === " " ? "\u00A0" : char}
-                </motion.div>
-              ))}
-            </h3>
             <Button
-              className="bg-btn"
+              className="bg-btn hero"
               href="#"
               as={motion.button}
               initial={{ opacity: 0, translateY: 100 }}
@@ -58,16 +45,6 @@ const IndexPage = props => {
               transition={{ duration: 0.5 }}
             >
               Join our newsletter
-            </Button>
-            <Button
-              className="bg-btn"
-              href="#"
-              as={motion.button}
-              initial={{ opacity: 0, translateY: 100 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
-              Hire us for Recruitment
             </Button>
           </div>
         </div>
@@ -87,33 +64,108 @@ const IndexPage = props => {
           Who We Are
         </motion.h1>
         <p className="pb-3">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Haitians in Tech™ is dedicated to showcasing seasoned technology
+          professionals of Haitian descent,<br></br>and connecting aspiring
+          technologist with opportunities in the tech industry.
         </p>
         <ServiceCards />
       </Container>
       <Container className="form-section" fluid>
         <div className="form-content">
-          <h1 className="form-title">Subscribe to our newsletter</h1>
-          <p className="form-text">
-            Get the latest job openings, upcoming events, valuable resources and
-            opportunities in your inbox bi-weekly!
+          <h1 className="form-title">
+            Subscribe to our <span className="red">newsletter</span>
+          </h1>
+          <p className="form-text pt-2">
+            Get the latest job openings, upcoming events, valuable resources
+            <br></br>and opportunities in your inbox bi-weekly!
           </p>
         </div>
         <Container className="form">
-          <Form>
-            <Form.Group controlId="formGroupEmail" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Button variant="primary" type="submit">
-                Submit
-              </Button>
+          <Form
+            name="newsletter"
+            netlify-honeypot="bot-field"
+            method="POST"
+            data-netlify="true"
+            id="newsletter"
+          >
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden" netlify>
+              <label>
+                Don’t fill this out if you're human:{" "}
+                <input name="bot-field" name="email" value="email" />
+              </label>
+            </p>
+            <Form.Group controlId="formGroupEmail">
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+              />
             </Form.Group>
+            <Button
+              value="register"
+              className="bg-btn form-button"
+              type="submit"
+            >
+              Submit
+            </Button>
           </Form>
         </Container>
       </Container>
     </Layout>
   )
 }
+
+/* import ServiceCards from "../components/servicecards.js"
+import "../css/button.css"
+
+const IndexPage = (props) => (
+  <Layout>
+    <SEO title="Home" />
+    <BackgroundImage className="masthead"
+    fluid={props.data.indexImage.childImageSharp.fluid}
+    >
+      <div className="black-overlay">
+        <div className="content-box">
+          <h1 className="all-caps hero-heading">L'union fait la force</h1>
+          <Container>
+            <Button className="bg-btn hero" href="#newsletter">Join our newsletter</Button>
+          </Container>
+        </div>
+      </div>
+    </BackgroundImage>
+    <Container className="who-we-are pt-5" fluid>
+      <h1 className="p-3">Who We Are</h1>
+      <p className="pb-3">Haitians in Tech™ is dedicated to showcasing seasoned technology professionals of Haitian descent,<br></br>and connecting aspiring technologist with opportunities in the tech industry.</p>
+      <ServiceCards />
+    </Container>
+    <Container className="form-section" fluid>
+      <div className="form-content">
+        <h1 className="form-title">Subscribe to our <span className="red">newsletter</span></h1>
+        <p className="form-text pt-2">Get the latest job openings, upcoming events, valuable resources<br></br>and opportunities in your inbox bi-weekly!</p>
+      </div>
+      <Container className="form">
+        <Form 
+          name="newsletter"
+          netlify-honeypot="bot-field" 
+          method="POST" 
+          data-netlify="true" 
+          id="newsletter">
+            <input type="hidden" name="form-name" value="newsletter" />
+            <p class="hidden" netlify>
+              <label>Don’t fill this out if you're human: <input name="bot-field" name="email" value="email"/></label>
+            </p>
+          <Form.Group controlId="formGroupEmail">
+              <Form.Control type="email" placeholder="Enter email" name="email" />             
+          </Form.Group>
+          <Button value="register" className="bg-btn form-button" type="submit">
+                Submit
+          </Button> 
+        </Form>        
+      </Container>
+    </Layout>
+  )
+} */
 
 export default IndexPage
 

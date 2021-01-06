@@ -8,10 +8,10 @@ const Logo = () => {
   query MyLogo {
     file(relativePath: {eq: "hit-logo.png"}) {
       childImageSharp {
-        fluid(maxWidth: 500) {
+        fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid
         }
-        fixed(width: 200) {
+        fixed(width: 100) {
           ...GatsbyImageSharpFixed
         }
       }

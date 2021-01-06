@@ -616,3 +616,13 @@ main {
     font-size: 100%;
   }
 }
+
+.red {
+  color: #D40D2C;
+}
+.all-caps {
+  text-transform: uppercase;
+}
+.hidden {
+  display: none;
+}
