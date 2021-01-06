@@ -5,8 +5,8 @@ const TeamCards = ({ imageData, name, title, linkedin, portfolio }) => (
   <div className="team-section">
     <Img fluid={imageData} alt={name} objectFit="contain" />
     <div>
-      <p>{name}</p>
-      <p>{title}</p>
+      <h5>{name}</h5>
+      <p style={{ opacity: 0.6 }}>{title}</p>
       <p>
         <a href={`${linkedin}`}>Linkedin</a>
       </p>
