@@ -5,6 +5,9 @@
     box-shadow: 0.33333rem 0 1.33333rem rgba(87,87,87,.1) !important;
 }
 
+.nav-link.active {
+    color: #D40D2C !important 
+}
 .nav-link {
     color: #000000 !important;
 }

@@ -1,11 +1,12 @@
 import React from "react"
 import Img from "gatsby-image"
 import { Card } from "react-bootstrap";
+import AnimatedCard from "./animatedCard";
 
 
-const TeamCards = ({ imageData, name, title, linkedin, portfolio }) => (
+const TeamCards = ({ imageData, name, title, linkedin, portfolio, animationDelay }) => (
   <div className="team-section h-100 pb-5">
-    <Card className="team-cards">
+    <AnimatedCard className="team-cards" delay={animationDelay}>
     <Img fluid={imageData} alt={name} />
       <Card.Body className="team-card-body">
         <p>{name}</p>
@@ -17,7 +18,7 @@ const TeamCards = ({ imageData, name, title, linkedin, portfolio }) => (
           <a href={`${portfolio}`}>Portfolio</a>
         </p>
       </Card.Body>
-    </Card>
+    </AnimatedCard>
   </div>
 )
 

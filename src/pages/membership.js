@@ -38,7 +38,7 @@ const MembershipPage = (props) => (
             <li><span aria-label="emoji" role="img">🎁</span> Curated perks including discounted conferences, coding classes, and more.</li>
             <br></br>
             <br></br>
-            <h5 className="pb-1">...All for less than the price of one conference.</h5>
+            <h5 className="pb-1 font-weight-bold">...All for less than the price of one conference.</h5>
             </ul>
           </div>
         </Col>

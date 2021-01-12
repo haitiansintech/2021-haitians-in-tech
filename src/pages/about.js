@@ -41,7 +41,7 @@ const AboutPage = ({ data }) => {
         <h1 className="page-heading p-5">Team</h1>
       <Container className="pb-5 team-container" fluid>
         <Row>
-          {team.nodes.map(({ title, name, image, linkedin, portfolio }) => {
+          {team.nodes.map(({ title, name, image, linkedin, portfolio }, index) => {
             const imageData = image.childImageSharp.fluid
 
             return (
@@ -52,6 +52,7 @@ const AboutPage = ({ data }) => {
                   imageData={imageData}
                   linkedin={linkedin}
                   portfolio={portfolio}
+                  animationDelay={index / team.nodes.length}
                 />
               </Col>
             )
