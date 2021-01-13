@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Card, Row, Col } from "react-bootstrap"
 import "../css/cards.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -7,22 +7,11 @@ import {
   faHandsHelping,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons"
-import { motion, useAnimation } from "framer-motion"
-import { useInView } from "react-intersection-observer"
 import AnimatedCard from "./animatedCard"
-// import Card from "./Card"
 
 const ServiceCard = ({ icon, title, description, animationDelay }) => {
-  // const controls = useAnimation()
-  // const [ref, inView] = useInView()
-  // useEffect(() => {
-  //   if (inView) {
-  //     controls.start("visible")
-  //   }
-  // }, [inView])
-
   return (
-    <AnimatedCard delay={animationDelay}>
+    <AnimatedCard delay={animationDelay} className="custom-card">
       <FontAwesomeIcon color="#d40d2c" icon={icon} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

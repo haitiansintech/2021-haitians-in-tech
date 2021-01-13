@@ -32,12 +32,12 @@
     border: 2px solid #d40d2c;
     border-radius: 5px;
     color: #d40d2c;
-    height: 300px;
+    height: 300px !important;
+    width: 300px;
     line-height: 0.4;
     margin: 9px auto;
-    padding-top: 95px;
+    padding-top: 95px !important;
     position: relative;
-    width: 300px;
 }
 .PriceTag--red {
     background-color:#d40d2c;

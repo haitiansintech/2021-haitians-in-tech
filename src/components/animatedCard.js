@@ -11,7 +11,7 @@ const AnimatedCard = ({ delay, ...props }) => {
     if (inView) {
       controls.start("visible")
     }
-  }, [inView])
+  }, [inView, controls])
   return (
     <Card
       {...props}

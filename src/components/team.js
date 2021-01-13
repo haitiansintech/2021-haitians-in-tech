@@ -6,7 +6,7 @@ import AnimatedCard from "./animatedCard";
 
 const TeamCards = ({ imageData, name, title, linkedin, portfolio, animationDelay }) => (
   <div className="team-section h-100 pb-5">
-    <AnimatedCard className="team-cards" delay={animationDelay}>
+    <AnimatedCard className="team-cards custom-card" delay={animationDelay}>
     <Img fluid={imageData} alt={name} />
       <Card.Body className="team-card-body">
         <p>{name}</p>
