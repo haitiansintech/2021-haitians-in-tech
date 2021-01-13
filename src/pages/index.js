@@ -19,7 +19,7 @@ const IndexPage = props => {
     if (inView) {
       controls.start("visible")
     }
-  }, [inView])
+  }, [inView, controls])
   return (
     <Layout>
       <SEO title="Home" />
