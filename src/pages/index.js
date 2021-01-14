@@ -80,13 +80,12 @@ const IndexPage = props => {
             <br></br>and opportunities in your inbox bi-weekly!
           </p>
         </div>
-        <Container className="form">
+        <Container className="form" id="newsletter">
           <Form
             name="newsletter"
             netlify-honeypot="bot-field"
             method="POST"
             data-netlify="true"
-            id="newsletter"
           >
             <input type="hidden" name="form-name" value="newsletter" />
             <p class="hidden" netlify>
