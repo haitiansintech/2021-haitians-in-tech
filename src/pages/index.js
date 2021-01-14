@@ -70,7 +70,7 @@ const IndexPage = props => {
         </p>
         <ServiceCards />
       </Container>
-      <Container className="form-section" fluid>
+      <Container id="newsletter" className="form-section" fluid>
         <div className="form-content">
           <h1 className="form-title">
             Subscribe to our <span className="red">newsletter</span>
@@ -80,7 +80,7 @@ const IndexPage = props => {
             <br></br>and opportunities in your inbox bi-weekly!
           </p>
         </div>
-        <Container className="form" id="newsletter">
+        <Container className="form">
           <Form
             name="newsletter"
             netlify-honeypot="bot-field"
