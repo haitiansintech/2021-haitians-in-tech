@@ -44,7 +44,7 @@ const IndexPage = props => {
               animate={{ opacity: 1, translateY: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Join our newsletter
+              <a href="#newsletter" className="no-style-link">Join our newsletter</a>
             </Button>
           </div>
         </div>

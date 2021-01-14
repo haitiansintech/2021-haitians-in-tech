@@ -3,6 +3,10 @@
     color: #fff;
     border-color: #d40d2c;
 }
+.no-style-link {
+    color: #fff !important;
+    text-decoration: none !important;
+}
 .bg-btn:hover {
     color: #000000;
     border-color: #d40d2c;
